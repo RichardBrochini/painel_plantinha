@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Dashboard - Plantinha Feliz</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/styles.css" />
+  </head>
+
+  <body>
+
+   <div id="wrapper">
+      <div class="content-area">
+   
+      <div class="row">
+        <h4>Botões de Ação</h4>
+	<table>
+            <thead>
+              <th>Luz</th>
+              <th>Luz</th>
+              <th>Agua</th>
+              <th>Nutrientes</th>
+            </thead>
+	    <tr>
+		    <td><a href="javaScript:void(0);" id="comandoApagar">Apagar</a></td>
+		    <td><a href="javaScript:void(0);" id="comandoAcender">Acender</a></td>
+		    <td><a href="javaScript:void(0);" id="comandoMolhar">Molhar</a></td>
+		    <td><a href="javaScript:void(0);" id="comandoAdubar">Adubar</a></td>
+	    </tr>
+	    <tr>
+	    </tr>
+	  </table>
+	  <div id="ultimoUpdate">
+		<h4 id="ultimoUpdate"></h4>
+	  </div>
+      </div>
+	<div class="container-fluid">
+          <div class="text-right mt-3 mb-3 d-fixed">
+         
+	  </div>
+          <div class="main">
+       
+	    <div class="row">
+               <div class="col-md-5">
+                <div class="box columnbox mt-4">
+                  <div id="satusSemanalPlantinha"></div>
+                </div>
+              </div>            
+              <div class="col-md-7">
+                <div class="box mt-4">
+                  <div class="mt-4">
+                    <div id="umidadeDiariaBarra"></div>
+                  </div>
+                  <div class="mt-4">
+                    <div id="aguaDiariaBarra"></div>
+                  </div>
+                  <div class="mt-4">
+                    <div id="temperaturaDiariaBarra"></div>
+                  </div>
+		  <div class="mt-4">
+                    <div id="luzDiariaBarra"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+     <div id="chart"></div>
+
+
+            <div class="row">
+             
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+    <div class="row">
+	  <h4>Historico de comandos</h4>
+          <table>
+            <thead>
+              <th>Chamada</th>
+              <th>Ação</th>
+              <th>dia</th>
+              <th>Hora</th>
+            </thead>
+            <tbody id="lista.comandos"></tbody>
+          </table>
+        </div>
+      </div>
+
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <script src="dist/apexcharts.js"></script>
+    <script src="assets/scripts.js"></script>
+  </body>
+</html>
